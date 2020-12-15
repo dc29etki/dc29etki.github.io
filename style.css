@@ -69,7 +69,11 @@ html {
   }
   
   .scroll-to-top:hover {
-    background: #343a40;
+    background: #202124;
+  }
+
+  .bg-dark {
+    background: #202124 !important
   }
   
   .scroll-to-top i {
@@ -358,11 +362,11 @@ html {
   }
   
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-    color: #868e96;
+    color: white;
   }
   
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-    color: #868e96;
+    color: white;
   }
   
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
@@ -371,7 +375,7 @@ html {
   
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
-    color: #868e96;
+    color: white;
   }
   
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
@@ -386,7 +390,7 @@ html {
   
   @media (min-width: 992px) {
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-      background: #343a40;
+      background: #202124;
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
       color: white !important;
@@ -397,7 +401,7 @@ html {
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
-      background: #343a40;
+      background: #202124;
     }
   }
   
@@ -443,6 +447,10 @@ html {
     #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
       background: #f8f9fa;
     }
+  }
+
+  .navbar-nav a {
+    color: white !important;
   }
   
   .card-body-icon {
