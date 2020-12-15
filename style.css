@@ -14,6 +14,13 @@ html {
   .no-ins-count span {
     font-weight: bold;
   }
+
+  .stat {
+    background: #0081c5;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+  }
   
   body.sticky-footer {
     margin-bottom: 56px;
