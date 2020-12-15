@@ -1,413 +1,389 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Dashboard</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://kit.fontawesome.com/72cf4fca1e.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body class="fixed-nav sticky-footer bg-dark" id="page-top">
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-		  <a class="navbar-brand" href="dashboard.html"><img style="width: 200px;" src="LT-logo.png"/></a>
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/72cf4fca1e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		<a class="navbar-brand" href="dashboard.html"><img style="width: 200px;" src="LT-logo.png" /></a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<!-- Menu -->
 			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-				<a class="nav-link" href="index.html">
-				  <i class="fa fa-fw fa-dashboard"></i>
-				  <span class="nav-link-text">Dashboard</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-				<a class="nav-link" href="tables.html">
-				  <i class="fa fa-fw fa-table"></i>
-				  <span class="nav-link-text">All Residents</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-				<a class="nav-link" href="tables.html">
-				  <i class="fa fa-users"></i>
-				  <span class="nav-link-text">Residents No Insurance</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-				<a class="nav-link" href="tables.html">
-				  <i class="fa fa-building"></i>
-				  <span class="nav-link-text">Units No Insurance</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-				<a class="nav-link" href="#">
-				  <i class="fa fa-clock"></i>
-				  <span class="nav-link-text">30 Day Expiration</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-				<a class="nav-link" href="#">
-				  <i class="fa fa-people-arrows"></i>
-				  <span class="nav-link-text">Predictive Charge List</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-				<a class="nav-link" href="#">
-				  <i class="fa fa-comment-alt"></i>
-				  <span class="nav-link-text">Community Reporting</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-				<a class="nav-link" href="#">
-				  <i class="fa fa-question"></i>
-				  <span class="nav-link-text">FAQ</span>
-				</a>
-			  </li>
-			  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-				<a class="nav-link" href="#">
-				  <i class="fa fa-arrow-circle-right"></i>
-				  <span class="nav-link-text">Submit a Request</span>
-				</a>
-			  </li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+					<a class="nav-link" href="index.html">
+						<i class="fa fa-fw fa-dashboard"></i>
+						<span class="nav-link-text">Dashboard</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+					<a class="nav-link" href="tables.html">
+						<i class="fa fa-fw fa-table"></i>
+						<span class="nav-link-text">All Residents</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+					<a class="nav-link" href="tables.html">
+						<i class="fa fa-users"></i>
+						<span class="nav-link-text">Residents No Insurance</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+					<a class="nav-link" href="tables.html">
+						<i class="fa fa-building"></i>
+						<span class="nav-link-text">Units No Insurance</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+						<i class="fa fa-clock"></i>
+						<span class="nav-link-text">30 Day Expiration</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+						<i class="fa fa-people-arrows"></i>
+						<span class="nav-link-text">Predictive Charge List</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+						<i class="fa fa-comment-alt"></i>
+						<span class="nav-link-text">Community Reporting</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+						<i class="fa fa-question"></i>
+						<span class="nav-link-text">FAQ</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+						<i class="fa fa-arrow-circle-right"></i>
+						<span class="nav-link-text">Submit a Request</span>
+					</a>
+				</li>
 			</ul>
 			<!-- End of menu -->
 			<ul class="navbar-nav ml-auto">
 
 				<li class="nav-item dropdown my-auto">
-					<a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  <i class="fa fa-fw fa-bell"></i>
-					  <span class="d-lg-none">Alerts
-						<span class="badge badge-pill badge-warning">6 New</span>
-					  </span>
-					  <span class="indicator text-warning d-none d-lg-block">
-						<i class="fa fa-fw fa-circle"></i>
-					  </span>
+					<a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-fw fa-bell"></i>
+						<span class="d-lg-none">Alerts
+							<span class="badge badge-pill badge-warning">6 New</span>
+						</span>
+						<span class="indicator text-warning d-none d-lg-block">
+							<i class="fa fa-fw fa-circle"></i>
+						</span>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="alertsDropdown">
-					  <h6 class="dropdown-header">New Alerts:</h6>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">
-						<span class="text-success">
-						  <strong>
-							<i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
-						</span>
-						<span class="small float-right text-muted">11:21 AM</span>
-						<div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-					  </a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">
-						<span class="text-danger">
-						  <strong>
-							<i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
-						</span>
-						<span class="small float-right text-muted">11:21 AM</span>
-						<div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-					  </a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">
-						<span class="text-success">
-						  <strong>
-							<i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
-						</span>
-						<span class="small float-right text-muted">11:21 AM</span>
-						<div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-					  </a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item small" href="#">View all alerts</a>
+						<h6 class="dropdown-header">New Alerts:</h6>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<span class="text-success">
+								<strong>
+									<i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+							</span>
+							<span class="small float-right text-muted">11:21 AM</span>
+							<div class="dropdown-message small">This is an automated server response message. All
+								systems are online.</div>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<span class="text-danger">
+								<strong>
+									<i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+							</span>
+							<span class="small float-right text-muted">11:21 AM</span>
+							<div class="dropdown-message small">This is an automated server response message. All
+								systems are online.</div>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<span class="text-success">
+								<strong>
+									<i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+							</span>
+							<span class="small float-right text-muted">11:21 AM</span>
+							<div class="dropdown-message small">This is an automated server response message. All
+								systems are online.</div>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item small" href="#">View all alerts</a>
 					</div>
-				  </li>
-			  <li class="nav-item dropdown my-auto">
-				<a class="nav-link dropdown-toggle mr-lg-2" id="helpDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  <i class="fa fa-question-circle"></i>
-				  <span class="d-lg-none">Help Topics</span>
-				</a>
-				<div class="dropdown-menu" aria-labelledby="helpDropdown">
-				  <h6 class="dropdown-header">Help Topics:</h6>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="#">
-					<strong>Help with Units</strong>
-				  </a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="#">
-					<strong>Help with Residents</strong>
-				  </a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="#">
-					<strong>Report a Problem</strong>
-				  </a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item small" href="#">View all topics</a>
-				</div>
-			  </li>
-			  
-			  <li class="nav-item">
-				<form class="form-inline my-2 my-lg-0 mr-lg-2">
-				  <div class="input-group">
-					<input class="form-control" type="text" placeholder="Search...">
-					<span class="input-group-append">
-					  <button class="btn btn-primary" type="button">
-						<i class="fa fa-search"></i>
-					  </button>
-					</span>
-				  </div>
-				</form>
-			  </li>
-			  <li class="nav-item my-auto">
-				<a class="nav-link" data-toggle="modal">
-				  <i class="fa fa-gear"></i><span class="d-lg-none">Settings</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-				  <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-			  </li>
+				</li>
+				<li class="nav-item dropdown my-auto">
+					<a class="nav-link dropdown-toggle mr-lg-2" id="helpDropdown" href="#" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-question-circle"></i>
+						<span class="d-lg-none">Help Topics</span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="helpDropdown">
+						<h6 class="dropdown-header">Help Topics:</h6>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<strong>Help with Units</strong>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<strong>Help with Residents</strong>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<strong>Report a Problem</strong>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item small" href="#">View all topics</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<form class="form-inline my-2 my-lg-0 mr-lg-2">
+						<div class="input-group">
+							<input class="form-control" type="text" placeholder="Search...">
+							<span class="input-group-append">
+								<button class="btn btn-primary" type="button">
+									<i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
+					</form>
+				</li>
+				<li class="nav-item my-auto">
+					<a class="nav-link" data-toggle="modal">
+						<i class="fa fa-gear"></i><span class="d-lg-none">Settings</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+						<i class="fa fa-fw fa-sign-out"></i>Logout</a>
+				</li>
 			</ul>
-		  </div>
-		</nav>
+		</div>
+	</nav>
 
 
-		<div class="content-wrapper">
-		  <div class="container-fluid">
-			<!-- Breadcrumbs-->
+	<div class="content-wrapper">
+		<div class="container-fluid">
 			<ol class="breadcrumb">
-			  <li class="breadcrumb-item">
-				<a href="#">Dashboard</a>
-			  </li>
-			  <li class="breadcrumb-item active">Dashboard</li>
+				<li class="breadcrumb-item">
+					<a href="#">Dashboard</a>
+				</li>
+				<li class="breadcrumb-item active">Dashboard</li>
 			</ol>
-			<!-- Icon Cards-->
-			<div class="row">
-			  <div class="col-xl-3 col-sm-6 mb-3">
-				<div class="card text-white bg-warning o-hidden h-100">
-				  <div class="card-body">
-					<div class="card-body-icon">
-					  <i class="fa fa-fw fa-list"></i>
-					</div>
-					<div class="mr-5">11 Tasks</div>
-				  </div>
-				  <a class="card-footer text-white clearfix small z-1" href="#">
-					<span class="float-left">New Task</span>
-					<span class="float-right">
-					  <i class="fa fa-angle-right"></i>
-					</span>
-				  </a>
-				</div>
-			  </div>
 
-			  <div class="col-xl-3 col-sm-6 mb-3">
-				<div class="card text-white bg-danger o-hidden h-100">
-				  <div class="card-body">
-					<div class="card-body-icon">
-					  <i class="fa fa-exclamation-triangle"></i>
+			<div class="d-flex" style="display: none !important;">
+				<div class="card text-white bg-warning o-hidden">
+					<div class="card-body">
+						<div class="card-body-icon">
+							<i class="fa fa-fw fa-list"></i>
+						</div>
+						<div class="mr-5">11 Tasks</div>
 					</div>
-					<div class="mr-5">6 Alerts</div>
-				  </div>
-				  <a class="card-footer text-white clearfix small z-1" href="#">
-					<span class="float-left">View Alerts</span>
-					<span class="float-right">
-					  <i class="fa fa-angle-right"></i>
-					</span>
-				  </a>
+					<a class="card-footer text-white clearfix small z-1" href="#">
+						<span class="float-left">New Task</span>
+						<span class="float-right">
+							<i class="fa fa-angle-right"></i>
+						</span>
+					</a>
 				</div>
-			  </div>
-			</div>
 
-			<div class="quick-stats mb-3">
+				<div class="card text-white bg-danger o-hidden">
+					<div class="card-body">
+						<div class="card-body-icon">
+							<i class="fa fa-exclamation-triangle"></i>
+						</div>
+						<div class="mr-5">6 Alerts</div>
+					</div>
+					<a class="card-footer text-white clearfix small z-1" href="#">
+						<span class="float-left">View Alerts</span>
+						<span class="float-right">
+							<i class="fa fa-angle-right"></i>
+						</span>
+					</a>
+				</div>
+
 				<div class="card">
 					<div class="card-header">
-					  <i class="fa fa-info-circle"></i> Quick Stats</div>
+						<i class="fa fa-info-circle"></i> Quick Stats
+					</div>
 					<div class="list-group list-group-flush small">
 						<div class="d-flex pl-3">
-							<div class="stat alert alert-primary p-2 my-3 mx-1"><strong>9</strong> Residents Without Insurance</div>
-							<div class="stat alert alert-warning p-2 my-3 mx-1"><strong>44</strong> Units Without Insurance</div>
+							<div class="stat alert alert-primary p-2 my-3 mx-1"><strong>9</strong> Residents Without
+								Insurance</div>
+							<div class="stat alert alert-warning p-2 my-3 mx-1"><strong>44</strong> Units Without
+								Insurance</div>
 							<div class="stat alert alert-success p-2 my-3 mx-1"><strong>92%</strong> Participation</div>
-							<div class="stat alert alert-danger p-2 my-3 mx-1"><strong>85</strong> 30 Day Expiration</div>
+							<div class="stat alert alert-danger p-2 my-3 mx-1"><strong>85</strong> 30 Day Expiration
+							</div>
 						</div>
-						<!-- <div class="d-flex pl-3">
+						<div class="d-flex pl-3">
 							<div class="stat1 p-2 my-3 mx-1"><strong>9</strong> Residents Without Insurance</div>
 							<div class="stat1 p-2 my-3 mx-1"><strong>44</strong> Units Without Insurance</div>
 							<div class="stat1 p-2 my-3 mx-1"><strong>92%</strong> Participation</div>
 							<div class="stat1 p-2 my-3 mx-1"><strong>85</strong> 30 Day Expiration</div>
-						</div> -->
+						</div>
 					</div>
+				</div>
+			</div>
+
+			<!-- Icon Cards-->
+			<div class="row">
+				<div class="col-xl-3 col-sm-6 mb-3">
+				  <div class="card text-white bg-warning o-hidden h-100">
+					<div class="card-body">
+					  <div class="card-body-icon">
+						<i class="fa fa-fw fa-list"></i>
+					  </div>
+					  <div class="mr-5">11 Tasks</div>
+					</div>
+					<a class="card-footer text-white clearfix small z-1" href="#">
+					  <span class="float-left">New Task</span>
+					  <span class="float-right">
+						<i class="fa fa-angle-right"></i>
+					  </span>
+					</a>
 				  </div>
-			</div>
+				</div>
+  
+				<div class="col-xl-3 col-sm-6 mb-3">
+				  <div class="card text-white bg-danger o-hidden h-100">
+					<div class="card-body">
+					  <div class="card-body-icon">
+						<i class="fa fa-exclamation-triangle"></i>
+					  </div>
+					  <div class="mr-5">6 Alerts</div>
+					</div>
+					<a class="card-footer text-white clearfix small z-1" href="#">
+					  <span class="float-left">View Alerts</span>
+					  <span class="float-right">
+						<i class="fa fa-angle-right"></i>
+					  </span>
+					</a>
+				  </div>
+				</div>
+			  </div>
 
-
-			<!-- Area Chart Example-->
-			<div class="row pb-3">
-				<div class="col-lg-8">
-					<div class="card mb-3">
+			<div class="cards row">
+				<div class="col-md-8 mb-3">
+					<div class="card h-100">
 						<div class="card-header">
-						  <i class="fa fa-users"></i> Residents No Insurance</div>
+							<i class="fa fa-users"></i> Residents No Insurance
+						</div>
 						<div class="card-body">
-						  <div class="no-ins-count mx-3 mb-3"><span>9</span> Residents Without Insurance</div>	
-						  <canvas id="myAreaChart" width="100%" height="30"></canvas>
-							</div>
+							<div class="no-ins-count mx-3 mb-3"><span>9</span> Residents Without Insurance</div>
+							<canvas id="myAreaChart" width="100%" height="30"></canvas>
+						</div>
 						<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-					  </div>
+					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="card">
+				<div class="col-md-4 mb-3">
+					<div class="card h-100">
 						<div class="card-header">
-						  <i class="fa fa-list"></i> Tasks</div>
-						<div class="list-group list-group-flush small">
-						  <a class="list-group-item list-group-item-action" href="#">
-							<div class="media">
-							  <div class="media-body">
-								<strong>Task One</strong> lorem ipsum.....
-								<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-							  </div>
+							<i class="fa fa-list"></i> Tasks
+						</div>
+						<div class="card-body p-0">
+							<div class="list-group list-group-flush small">
+								<a class="list-group-item list-group-item-action" href="#">
+									<div class="media">
+										<div class="media-body">
+											<strong>Task One</strong> lorem ipsum.....
+											<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#">
+									<div class="media">
+										<div class="media-body">
+											<strong>Task Two</strong> lorem ipsum.....
+											<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#">
+									<div class="media">
+										<div class="media-body">
+											<strong>Task Three</strong> lorem ipsum.....
+											<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#">
+									<div class="media">
+										<div class="media-body">
+											<strong>Task Four</strong> lorem ipsum.....
+											<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#">View all tasks...</a>
 							</div>
-						  </a>
-						  <a class="list-group-item list-group-item-action" href="#">
-							<div class="media">
-								<div class="media-body">
-									<strong>Task Two</strong> lorem ipsum.....
-									<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-								  </div>
-							</div>
-						  </a>
-						  <a class="list-group-item list-group-item-action" href="#">
-							<div class="media">
-								<div class="media-body">
-									<strong>Task Three</strong> lorem ipsum.....
-									<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-								  </div>
-							</div>
-						  </a>
-						  <a class="list-group-item list-group-item-action" href="#">
-							<div class="media">
-								<div class="media-body">
-									<strong>Task Four</strong> lorem ipsum.....
-									<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-								  </div>
-							</div>
-						  </a>
-						  <a class="list-group-item list-group-item-action" href="#">View all tasks...</a>
+						</div>
+						<div class="card-footer small text-muted mb-0">Updated yesterday at 11:59 PM</div>
+					</div>
+				</div>
+			</div>
+			<div class="cards row">
+				<div class="col-md-6 mb-3">
+					<div class="card h-100">
+						<div class="card-header">
+							<i class="fa fa-bar-chart"></i> All Residents
+						</div>
+
+						<div class="card-body p-3">
+							<div class="text-center font-weight-bold">Residents from All Properties</div>
+							<canvas id="myBarChart" class="mt-3" width="100%" height="30"></canvas>
 						</div>
 						<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-					  </div>
-				</div>
-			</div>
-			
-
-			<div class="row pb-3">
-				<div class="col-lg-7">
-					<!-- Example Bar Chart Card-->
-					<div class="card mb-3">
-					  <div class="card-header">
-						<i class="fa fa-bar-chart"></i> All Residents</div>
-						<div class="text-center font-weight-bold mt-3">Residents from All Properties</div>
-					  <div class="card-body">
-						  <canvas id="myBarChart" class="mt-3" width="100%" height="20"></canvas>
-					  </div>
-					  <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 					</div>
-					  </div>
-				<div class="col-lg-5">
-					<!-- Example Pie Chart Card-->
-						<div class="card mb-3">
-						  <div class="card-header">
-						<i class="fa fa-pie-chart"></i> Participation</div>
-						  <div class="card-body w-75 mx-auto">
-							<canvas id="myPieChart"width="100%" height="70"></canvas>
-						  </div>
+				</div>
+				<div class="col-md-6 mb-3">
+					<div class="card h-100">
+						<div class="card-header">
+							<i class="fa fa-pie-chart"></i> Participation
+						</div>
+						<div class="card-body p-3">
+							<canvas id="myPieChart" width="100%" height="30"></canvas>
+						</div>
 						<div class="text-center font-weight-bold mb-3">92% Insured</div>
-						  <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-						</div>
+						<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 					</div>
-				
-			  
+				</div>
 			</div>
-		  </div>
-		  <!-- /.container-fluid-->
-		  <!-- /.content-wrapper-->
-		  <footer class="sticky-footer">
+
+		</div>
+		<footer class="sticky-footer">
 			<div class="container">
-			  <div class="text-center">
-				<small>© 2020 Effective Coverage. All rights reserved.</small>
-			  </div>
+				<div class="text-center">
+					<small>© 2020 Effective Coverage. All rights reserved.</small>
+				</div>
 			</div>
-		  </footer>
+		</footer>
+	</div>
 
-		  <!-- Logout Modal-->
-		  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-				  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">×</span>
-				  </button>
-				</div>
-				<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-				<div class="modal-footer">
-				  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-				  <a class="btn btn-primary" href="login.html">Logout</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>		
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-		<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-		<script src="script.js"></script>
-	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
 </html>
-
-
-		<!-- Example Notifications Card
-				<div class="card mb-3">
-					<div class="card-header">
-					  <i class="fa fa-bell-o"></i> Feed Example</div>
-					<div class="list-group list-group-flush small">
-					  <a class="list-group-item list-group-item-action" href="#">
-						<div class="media">
-						  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
-						  <div class="media-body">
-							<strong>David Miller</strong>posted a new article to
-							<strong>David Miller Website</strong>.
-							<div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-						  </div>
-						</div>
-					  </a>
-					  <a class="list-group-item list-group-item-action" href="#">
-						<div class="media">
-						  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
-						  <div class="media-body">
-							<strong>Samantha King</strong>sent you a new message!
-							<div class="text-muted smaller">Today at 4:37 PM - 1hr ago</div>
-						  </div>
-						</div>
-					  </a>
-					  <a class="list-group-item list-group-item-action" href="#">
-						<div class="media">
-						  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
-						  <div class="media-body">
-							<strong>Jeffery Wellings</strong>added a new photo to the album
-							<strong>Beach</strong>.
-							<div class="text-muted smaller">Today at 4:31 PM - 1hr ago</div>
-						  </div>
-						</div>
-					  </a>
-					  <a class="list-group-item list-group-item-action" href="#">
-						<div class="media">
-						  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
-						  <div class="media-body">
-							<i class="fa fa-code-fork"></i>
-							<strong>Monica Dennis</strong>forked the
-							<strong>startbootstrap-sb-admin</strong>repository on
-							<strong>GitHub</strong>.
-							<div class="text-muted smaller">Today at 3:54 PM - 2hrs ago</div>
-						  </div>
-						</div>
-					  </a>
-					  <a class="list-group-item list-group-item-action" href="#">View all activity...</a>
-					</div>
-					<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-				  </div> -->
