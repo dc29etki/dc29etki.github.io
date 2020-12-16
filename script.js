@@ -169,3 +169,4 @@ $(document).ready(function() {
     event.preventDefault();
   });
 })(jQuery); // End of use strict
+
