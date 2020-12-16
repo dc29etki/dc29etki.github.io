@@ -32,6 +32,10 @@ body {
 
 .row {}
 
+.navbar-toggler span {
+    color: white !important;
+}
+
 body.sticky-footer {
     margin-bottom: 56px;
 }
