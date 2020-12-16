@@ -5,6 +5,7 @@ html {
   
   body {
     overflow-x: hidden;
+    font-family: sofia-pro, sans-serif;
   }
 
   .no-ins-count {
@@ -26,6 +27,7 @@ html {
     font-size: 14px;
   }
 
+ 
   .cards {
  
   }
@@ -510,4 +512,8 @@ html {
     body.sidenav-toggled footer.sticky-footer {
       width: calc(100% - 55px);
     }
+  }
+
+  .dropdown-message, a.dropdown-item {
+    color: #3f3f3f !important;
   }
