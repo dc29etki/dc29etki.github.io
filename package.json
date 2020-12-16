@@ -1,0 +1,23 @@
+{
+    "name": "dc29etki.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dc29etki/dc29etki.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dc29etki/dc29etki.github.io/issues"
+    },
+    "homepage": "https://github.com/dc29etki/dc29etki.github.io#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
