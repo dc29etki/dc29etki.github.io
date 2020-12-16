@@ -37,7 +37,11 @@ body {
 }
 
 body.sticky-footer {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
+}
+
+.container-fluid {
+    margin-bottom: 50px;
 }
 
 body.sticky-footer .content-wrapper {
