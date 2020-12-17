@@ -12,5 +12,5 @@ npm run start
 
 ### Compiles and serves on Unix systems
 ```
-npm run start
+npm run start-unix
 ```
