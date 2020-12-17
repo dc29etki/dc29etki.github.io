@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "concurrently \"node server.js\" \"start http://localhost:8081\""
+        "start": "concurrently \"node server.js\" \"start http://localhost:8081\"",
+        "start-unix": "concurrently \"node server.js\" \"open http://localhost:8081/\""
+
     },
     "repository": {
         "type": "git",
