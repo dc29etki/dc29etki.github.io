@@ -1,14 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard</title>
+    <title>Submit a Request</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/72cf4fca1e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+    <script>
+        $(function() {
+            $('#units_no').DataTable({
+                "pageLength": 10,
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true
+            });
+        });
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -170,154 +189,94 @@
         <div class="container-fluid">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="#">Dashboard</a>
+                    <a href="index.html">Dashboard</a>
                 </li>
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item active">Submit a Request</li>
             </ol>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <div class="card text-white bg-danger o-hidden h-100">
-                        <div class="card-body">
-                            <div class="card-body-icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="mr-5" style="font-size: 18px;"><strong>11</strong> Residents Without Insurance
-                            </div>
-                        </div>
-                    </div>
+            <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between w-100 align-items-center">
+                    <div><i class="fa fa-arrow-circle-right"></i> Submit a Request</div>
                 </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <div class="card text-white bg-primary o-hidden h-100">
-                        <div class="card-body">
-                            <div class="card-body-icon">
-                                <i class="fa fa-building"></i>
-                            </div>
-                            <div class="mr-5" style="font-size: 18px;"><strong>11</strong> Units Without Insurance</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="request_form">Request</label>
+                            <textarea class="form-control" id="request_text" rows="3" placeholder="What is your request?"></textarea>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <div class="card text-white bg-success o-hidden h-100">
-                        <div class="card-body">
-                            <div class="card-body-icon">
-                                <i class="fa fa-chart-line"></i>
-                            </div>
-                            <div class="mr-5 d-flex align-items-center" style="font-size: 18px;"><strong style="font-size: 28px;">92%&nbsp;</strong> Participation</div>
+                        <div class="form-group">
+                            <label for="request_form">Unit</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>5451 Volutpat Rd.</option>
+                                <option>P.O. Box 332, 6530 Duis St.</option>
+                                <option>3191 Vitae Rd.</option>
+                                <option>Ap #147-743 Euismod St.</option>
+                                <option>Ap #903-7629 Purus Road</option>
+                                <option>Ap #945-5234 Imperdiet Road</option>
+                                <option>Ap #232-6738 Nec, Road</option>
+                                <option>5439 Sed Road</option>
+                                <option>P.O. Box 254, 233 Nec St.</option>
+                                <option>5996 At, Ave</option>
+                                <option>290-2597 Sit St.</option>
+                                <option>357-9881 Mauris. Road</option>
+                                <option>549-9276 Tellus, Road</option>
+                                <option>770-5175 Non Road</option>
+                                <option>326-1367 Sed Av.</option>
+                                <option>Ap #525-705 Ridiculus St.</option>
+                                <option>605-1743 Sagittis Street</option>
+                                <option>Ap #438-4845 Nibh Av.</option>
+                                <option>P.O. Box 272, 2489 Congue Ave</option>
+                                <option>P.O. Box 747, 4673 Mattis. Av.</option>
+                                <option>467-5587 Nec St.</option>
+                                <option>9258 Mi Av.</option>
+                                <option>4866 Augue Street</option>
+                                <option>Ap #531-925 At Rd.</option>
+                                <option>Ap #977-9375 Vitae St.</option>
+                                <option>P.O. Box 931, 7751 Id, Avenue</option>
+                                <option>P.O. Box 129, 2107 Sed Road</option>
+                                <option>847-9161 Gravida Ave</option>
+                                <option>5099 Nibh. Av.</option>
+                                <option>Ap #878-9188 Eu Av.</option>
+                                <option>P.O. Box 201, 9488 Risus. St.</option>
+                                <option>4983 Vitae, Ave</option>
+                                <option>5360 Amet Av.</option>
+                                <option>8336 Gravida. Road</option>
+                                <option>Ap #765-567 Quis Av.</option>
+                                <option>1461 Donec St.</option>
+                                <option>P.O. Box 564, 8721 Proin Rd.</option>
+                                <option>P.O. Box 903, 6561 Purus, Rd.</option>
+                                <option>Ap #878-758 Sem Rd.</option>
+                                <option>7062 Donec Ave</option>
+                                <option>Ap #284-5621 Erat Avenue</option>
+                                <option>808-400 Aliquam Ave</option>
+                                <option>6089 Molestie Street</option>
+                                <option>2640 Dictum Rd.</option>
+                                <option>Ap #627-6066 Penatibus St.</option>
+                                <option>145-444 Erat. Rd.</option>
+                                <option>1159 Eleifend Road</option>
+                                <option>P.O. Box 438, 833 Dictum. Street</option>
+                                <option>755-4149 Odio. Rd.</option>
+                                <option>145-4677 Nulla. Avenue</option>
+                                <option>P.O. Box 369, 2890 Eget Rd.</option>
+                                <option>4272 Quam Street</option>
+                                <option>Ap #678-9800 Tristique St.</option>
+                                <option>287-4371 Consequat Rd.</option>
+                                <option>638-9149 Dolor. Av.</option>
+                                <option>P.O. Box 322, 8660 Eleifend. Rd.</option>
+                            </select>
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <div class="card text-white bg-warning o-hidden h-100">
-                        <div class="card-body">
-                            <div class="card-body-icon">
-                                <i class="fa fa-clock"></i>
-                            </div>
-                            <div class="mr-5 d-flex align-items-center" style="font-size: 18px;"><strong style="font-size: 28px;">24&nbsp;</strong> 30 Day Expiration</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="card-footer small text-muted">&nbsp;</div>
             </div>
-            <div class="cards row">
-                <div class="col-md-8 mb-3">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <i class="fa fa-users"></i> Residents No Insurance
-                        </div>
-                        <div class="card-body">
-                            <div class="no-ins-count mx-3 mb-3"><span>9</span> Residents Without Insurance</div>
-                            <canvas id="myAreaChart" width="100%" height="30"></canvas>
-                        </div>
-                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>© 2020 Effective Coverage. All rights reserved.</small>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <i class="fa fa-list"></i> Tasks
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="list-group list-group-flush small">
-                                <a class="list-group-item list-group-item-action" href="#">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <strong>Task One</strong> lorem ipsum.....
-                                            <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action" href="#">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <strong>Task Two</strong> lorem ipsum.....
-                                            <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action" href="#">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <strong>Task Three</strong> lorem ipsum.....
-                                            <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action" href="#">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <strong>Task Four</strong> lorem ipsum.....
-                                            <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action" href="#">View all tasks...</a>
-                            </div>
-                        </div>
-                        <div class="card-footer small text-muted mb-0">Updated yesterday at 11:59 PM</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cards row">
-                <div class="col-md-6 mb-3">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <i class="fa fa-bar-chart"></i> All Residents
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="text-center font-weight-bold">Residents from All Properties</div>
-                            <canvas id="myBarChart" class="mt-3" width="100%" height="30"></canvas>
-                        </div>
-                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <i class="fa fa-pie-chart"></i> Participation
-                        </div>
-                        <div class="card-body p-3">
-                            <canvas id="myPieChart" width="100%" height="30"></canvas>
-                        </div>
-                        <div class="text-center font-weight-bold mb-3">92% Insured</div>
-                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-                    </div>
-                </div>
-            </div>
+            </footer>
         </div>
-        <footer class="sticky-footer">
-            <div class="container">
-                <div class="text-center">
-                    <small>© 2020 Effective Coverage. All rights reserved.</small>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>script
-    <script src="script.js"></script>
 </body>
 
 </html>
