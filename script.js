@@ -97,6 +97,18 @@ var myLineChart = new Chart(ctx, {
 var ctx = document.getElementById("myPieChart");
 var options = {
     plugins: {
+        datalabels: {
+            formatter: (value, ctx) => {
+                let sum = 0;
+                let dataArr = ctx.chart.data.datasets[0].data;
+                dataArr.map(data => {
+                    sum += data;
+                });
+                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                return percentage;
+            },
+            color: '#fff',
+        },
         labels: {
             render: 'percentage',
             fontColor: ['green', 'white', 'red'],
@@ -107,10 +119,17 @@ var options = {
         enabled: true,
         callbacks: {
             label: function(tooltipItem, data) {
+                var dataset = data.datasets[tooltipItem.datasetIndex];
+                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                    return previousValue + currentValue;
+                });
                 var allData = data.datasets[tooltipItem.datasetIndex].data;
                 var tooltipLabel = data.labels[tooltipItem.index];
                 var tooltipData = allData[tooltipItem.index];
-                return tooltipLabel + ": " + tooltipData + "%";
+                var currentValue = dataset.data[tooltipItem.index];
+                var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+
+                return " " + tooltipLabel + ": " + percentage + "% " + "(" + tooltipData + ")";
             }
         }
     }
@@ -120,7 +139,7 @@ var myPieChart = new Chart(ctx, {
     data: {
         labels: ["EC Policy", "Other Policy", "Master Policy", "No Insurance"],
         datasets: [{
-            data: [15, 65, 12, 8],
+            data: [45, 65, 12, 8],
             backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545'],
         }],
     },
