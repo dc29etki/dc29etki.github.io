@@ -206,7 +206,6 @@ var options = {
                 var tooltipData = allData[tooltipItem.index];
                 var currentValue = dataset.data[tooltipItem.index];
                 var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
-
                 return " " + tooltipLabel + ": " + percentage + "% " + "(" + tooltipData + ")";
             }
         }
@@ -223,7 +222,14 @@ var options = {
         align: 'end',
         labels: {
             boxWidth: 12,
-            usePointStyle: true
+        }
+    },
+    layout: {
+        padding: {
+            left: 50,
+            right: 75,
+            top: 0,
+            bottom: 0
         }
     },
 };
