@@ -60,7 +60,7 @@ var myLineChart = new Chart(ctx, {
         labels: ["Insured", "Uninsured", "New Move In"],
         datasets: [{
             label: "Revenue",
-            backgroundColor: ["rgba(2,117,216,1)", "#dc3545", "#ffc107"],
+            backgroundColor: ["#0081c5", "#dc3545", "#ffc107"],
             data: [15400, 8000, 4000],
         }],
     },
@@ -240,7 +240,7 @@ var myPieChart = new Chart(ctx, {
         labels: ["EC Policy", "Other Policy", "Master Policy", "No Insurance"],
         datasets: [{
             data: [15, 65, 12, 8],
-            backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545'],
+            backgroundColor: ['#0081c5', '#28a745', '#ffc107', '#dc3545'],
         }],
     },
     options: options

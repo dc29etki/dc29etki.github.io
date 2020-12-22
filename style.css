@@ -37,6 +37,11 @@ body {
     font-size: 14px;
 }
 
+.bg-primary,
+.btn-primary {
+    background: #0081c5 !important;
+}
+
 .navbar-toggler span {
     color: white !important;
 }
