@@ -83,7 +83,7 @@ body.fixed-nav {
 .navbar-sidenav .nav-item:hover {
     background: #808080;
     border-radius: 6px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
 }
 
 .scroll-to-top:focus,
