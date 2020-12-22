@@ -5,7 +5,7 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: sofia-pro, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 .dropdown-divider {
@@ -80,17 +80,23 @@ body.fixed-nav {
     line-height: 45px;
 }
 
+.navbar-sidenav .nav-item:hover {
+    background: #808080;
+    border-radius: 6px;
+    margin: 8px 0;
+}
+
 .scroll-to-top:focus,
 .scroll-to-top:hover {
     color: white;
 }
 
 .scroll-to-top:hover {
-    background: #202124;
+    background: #142b4b;
 }
 
 .bg-dark {
-    background: #202124 !important
+    background: #142b4b !important
 }
 
 .scroll-to-top i {
@@ -409,7 +415,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 
 @media (min-width: 992px) {
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-        background: #202124;
+        background: #142b4b;
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
         color: white !important;
@@ -421,7 +427,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level,
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level {
-        background: #202124;
+        background: #142b4b;
     }
 }
 
