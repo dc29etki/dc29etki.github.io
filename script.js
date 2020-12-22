@@ -59,7 +59,7 @@ var myLineChart = new Chart(ctx, {
     data: {
         labels: ["Insured", "Uninsured", "New Move In"],
         datasets: [{
-            label: "Revenue",
+            label: "Residents",
             backgroundColor: ["#0081c5", "#dc3545", "#ffc107"],
             data: [15400, 8000, 4000],
         }],
