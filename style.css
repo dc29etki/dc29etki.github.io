@@ -5,7 +5,7 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: sofia-pro, sans-serif;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .dropdown-divider {
@@ -35,6 +35,14 @@ body {
     border-radius: 5px;
     color: white;
     font-size: 14px;
+}
+
+.tcard a {
+    text-decoration: none;
+}
+
+.tcard:hover {
+    transform: scale(1.04);
 }
 
 .navbar-toggler span {
@@ -75,17 +83,21 @@ body.fixed-nav {
     line-height: 45px;
 }
 
+a.nav-link:hover {
+    transform: scale(1.04);
+}
+
 .scroll-to-top:focus,
 .scroll-to-top:hover {
     color: white;
 }
 
 .scroll-to-top:hover {
-    background: #202124;
+    background: #022a4e;
 }
 
 .bg-dark {
-    background: #202124 !important
+    background: #022a4e !important
 }
 
 .scroll-to-top i {
@@ -404,7 +416,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 
 @media (min-width: 992px) {
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-        background: #202124;
+        background: #022a4e;
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
         color: white !important;
@@ -416,7 +428,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level,
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level {
-        background: #202124;
+        background: #022a4e;
     }
 }
 
