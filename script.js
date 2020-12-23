@@ -59,8 +59,8 @@ var myLineChart = new Chart(ctx, {
     data: {
         labels: ["Insured", "Uninsured", "New Move In"],
         datasets: [{
-            label: "Residents",
-            backgroundColor: ["#0081c5", "#dc3545", "#ffc107"],
+            label: "Revenue",
+            backgroundColor: ["rgba(2,117,216,1)", "#dc3545", "#ffc107"],
             data: [15400, 8000, 4000],
         }],
     },
@@ -177,7 +177,7 @@ Chart.pluginService.register({
         }
     }
 });
-var ctx = document.getElementById("myPieChart");
+var ctx = document.getElementById("participation_pie");
 var options = {
     plugins: {
         datalabels: {
@@ -222,32 +222,151 @@ var options = {
         align: 'end',
         labels: {
             boxWidth: 12,
-        }
-    },
-    layout: {
-        padding: {
-            left: 50,
-            right: 75,
-            top: 0,
-            bottom: 0
-        }
-    },
+            generateLabels(chart) {
+                const data = chart.data;
+                if (data.labels.length && data.datasets.length) {
+                    return data.labels.map((label, i) => {
+                        const meta = chart.getDatasetMeta(0);
+                        const style = meta.controller.getStyle(i);
+                        var value = chart.config.data.datasets[arc._datasetIndex].data[arc._index];
+                        return {
+                            text: label + " : " + value,
+                            fillStyle: style.backgroundColor,
+                            strokeStyle: style.borderColor,
+                            lineWidth: style.borderWidth,
+                            hidden: !chart.getDataVisibility(i),
+
+                            // Extra data used for toggling the correct item
+                            index: i
+                        };
+                    });
+                }
+                return [];
+            }
+        },
+        layout: {
+            padding: {
+                left: 50,
+                right: 75,
+                top: 0,
+                bottom: 0
+            }
+        },
+    }
 };
 
-var myPieChart = new Chart(ctx, {
+
+var ec_policy = 32;
+var other_policy = 95;
+var master_policy = 32;
+var no_insurance = 18;
+var participation_data = [ec_policy, other_policy, master_policy, no_insurance];
+var policies_total = 0;
+for (var i in participation_data) { policies_total += participation_data[i]; }
+var participation = ((policies_total - no_insurance) / policies_total) * 100;
+
+
+var participation_pie = new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: ["EC Policy", "Other Policy", "Master Policy", "No Insurance"],
         datasets: [{
-            data: [15, 65, 12, 8],
-            backgroundColor: ['#0081c5', '#28a745', '#ffc107', '#dc3545'],
+            data: participation_data,
+            backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545'],
         }],
     },
-    options: options
+    options: {
+        plugins: {
+            datalabels: {
+                formatter: (value, ctx) => {
+                    let sum = 0;
+                    let dataArr = ctx.chart.data.datasets[0].data;
+                    dataArr.map(data => {
+                        sum += data;
+                    });
+                    let percentage = (value * 100 / sum).toFixed(2) + "%";
+                    return percentage;
+                },
+                color: '#fff',
+            }
+        },
+        tooltips: {
+            enabled: true,
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                    var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                        return previousValue + currentValue;
+                    });
+                    var allData = data.datasets[tooltipItem.datasetIndex].data;
+                    var tooltipLabel = data.labels[tooltipItem.index];
+                    var tooltipData = allData[tooltipItem.index];
+                    var currentValue = dataset.data[tooltipItem.index];
+                    var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                    return " " + tooltipLabel + ": " + percentage + "% ";
+                }
+            }
+        },
+        elements: {
+            center: {
+                text: participation.toFixed() + "%",
+                minFontSize: 8,
+            }
+        },
+        legend: {
+            fullWidth: true,
+            position: 'right',
+            labels: {
+                boxWidth: 12,
+                padding: 10,
+                generateLabels: function(chart) {
+                    var data = chart.data;
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i])
+                    }
+                    if (data.labels.length && data.datasets.length) {
+                        return data.labels.map(function(label, i) {
+                            var meta = chart.getDatasetMeta(0);
+                            var ds = data.datasets[0];
+                            var arc = meta.data[i];
+                            var custom = arc && arc.custom || {};
+                            var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
+                            var arcOpts = chart.options.elements.arc;
+                            var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
+                            var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+                            var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+                            var value = chart.config.data.datasets[arc._datasetIndex].data[arc._index];
+                            var percentage = (value / policies_total) * 100;
+                            return {
+                                text: label + " : " + value,
+                                fillStyle: fill,
+                                strokeStyle: stroke,
+                                lineWidth: bw,
+                                hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+                                index: i
+                            };
+                        });
+                    } else {
+                        return [];
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 0,
+                        right: 0,
+                        top: 0,
+                        bottom: 0
+                    }
+                },
+            }
+        }
+    }
 });
+
 
 $(document).ready(function() {
     $('#dataTable').DataTable();
+    // document.getElementById("legend1").innerHTML = participation_pie.generateLegend();
 });
 
 (function($) {
