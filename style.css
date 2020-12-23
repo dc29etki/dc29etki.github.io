@@ -87,7 +87,7 @@ body.fixed-nav {
 }
 
 .navbar-sidenav .nav-item:hover a {
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 
 .scroll-to-top:focus,
