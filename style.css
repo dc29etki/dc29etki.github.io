@@ -482,7 +482,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus,
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
-        color: 23282d;
+        color: #23282d;
     }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level,
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level {
@@ -598,4 +598,9 @@ footer.sticky-footer {
 .dropdown-message,
 a.dropdown-item {
     color: #3f3f3f !important;
+}
+
+a.nav-link {
+    color: white !important;
+    opacity: 1;
 }
