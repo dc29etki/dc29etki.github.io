@@ -11,13 +11,13 @@ var myLineChart = new Chart(ctx, {
         datasets: [{
             label: "Residents Without Insurance",
             lineTension: 0.3,
-            backgroundColor: "rgba(2,117,216,0.2)",
-            borderColor: "rgba(2,117,216,1)",
+            backgroundColor: "rgba(0,129,197,0.2)",
+            borderColor: "rgba(0,129,197,1)",
             pointRadius: 5,
-            pointBackgroundColor: "rgba(2,117,216,1)",
+            pointBackgroundColor: "rgba(0,129,197,1)",
             pointBorderColor: "rgba(255,255,255,0.8)",
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: "rgba(2,117,216,1)",
+            pointHoverBackgroundColor: "rgba(0,129,197,1)",
             pointHitRadius: 20,
             pointBorderWidth: 2,
             data: [8, 12, 19, 11, 11, 8, 13, 9, 10, 8, 6, 8, 9],
@@ -60,7 +60,7 @@ var myLineChart = new Chart(ctx, {
         labels: ["Insured", "Uninsured", "New Move In"],
         datasets: [{
             label: "Revenue",
-            backgroundColor: ["rgba(2,117,216,1)", "#dc3545", "#ffc107"],
+            backgroundColor: ["rgba(0,129,197,1)", "#E9573F", "#3ddd97"],
             data: [15400, 8000, 4000],
         }],
     },
@@ -272,7 +272,7 @@ var participation_pie = new Chart(ctx, {
         labels: ["EC Policy", "Other Policy", "Master Policy", "No Insurance"],
         datasets: [{
             data: participation_data,
-            backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545'],
+            backgroundColor: ['#0081c5', '#FF9B21', '#3ddd97', '#E9573F'],
         }],
     },
     options: {
