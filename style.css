@@ -672,3 +672,8 @@ h6.panel-title {
 .accordion>.card .card-header {
     padding: 4px !important;
 }
+
+.bc-white.breadcrumb *,
+.bc-white .breadcrumb-item::before {
+    color: white !important;
+}
