@@ -21,7 +21,22 @@
 
     <div class="content-wrapper">
         <div class="container-fluid">
-            <img class="mb-3" src="https://dummyimage.com/150x50/0081c5/fff" />
+
+            <div id="alert" class="alert alert-success alert-dismissible fade show alert_hide" role="alert">
+                <strong>Success</strong><br> Your request has been submitted.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+
+            <div id="alert_fail" class="alert alert-danger alert-dismissible fade show alert_hide" role="alert">
+                <strong>Error</strong><br> Something has gone wrong.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+
+            <!-- <img class="mb-3" src="https://dummyimage.com/150x50/0081c5/fff" /> -->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item d-flex flex-column align-items-center">
                     <a href="index.html">&nbsp;[Community Name]</a>
@@ -173,6 +188,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        function setAlert() {
+            var url = window.location.href;
+            var param = url.split("?");
+            var alert = (param[1] == 'alert') ? true : false;
+            if (alert) {
+                var type = param[2];
+                if (type == 'success') {
+                    this.document.getElementById("alert").style.display = "block";
+                } else if (type == 'fail') {
+                    this.document.getElementById("alert_fail").style.display = "block";
+                }
+            }
+        }
+        setAlert();
+    </script>
 </body>
 
 </html>

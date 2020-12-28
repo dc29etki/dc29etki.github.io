@@ -598,6 +598,11 @@ a.dropdown-item {
     color: #3f3f3f !important;
 }
 
+#alert,
+#alert_fail {
+    display: none;
+}
+
 a.nav-link {
     color: white !important;
     opacity: 1;
