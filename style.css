@@ -650,3 +650,8 @@ a.nav-link {
 .border-primary {
     border: 5px solid #0081c5 !important;
 }
+
+.btn-primary:hover {
+    background: #0696e4 !important;
+    border: 1px solid transparent;
+}

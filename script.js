@@ -60,7 +60,7 @@ var myLineChart = new Chart(ctx, {
         labels: ["Insured", "Uninsured", "New Move In"],
         datasets: [{
             label: "Revenue",
-            backgroundColor: ["rgba(0,129,197,1)", "#E9573F", "#3ddd97"],
+            backgroundColor: ["#3ddd97", "#E9573F", "#0081c5"],
             data: [15400, 8000, 4000],
         }],
     },
@@ -272,7 +272,7 @@ var participation_pie = new Chart(ctx, {
         labels: ["EC Policy", "Other Policy", "Master Policy", "No Insurance"],
         datasets: [{
             data: participation_data,
-            backgroundColor: ['#0081c5', '#FF9B21', '#3ddd97', '#E9573F'],
+            backgroundColor: ['#0081c5', '#3ddd97', '#FF9B21', '#E9573F'],
         }],
     },
     options: {
