@@ -630,3 +630,23 @@ a.nav-link {
 .bg-warning {
     background: #FF9B21 !important;
 }
+
+.opacity-75 {
+    opacity: .75 !important;
+}
+
+.border-warning {
+    border: 5px solid #FF9B21 !important;
+}
+
+.border-danger {
+    border: 5px solid #E9573F !important;
+}
+
+.border-success {
+    border: 5px solid #3ddd97 !important;
+}
+
+.border-primary {
+    border: 5px solid #0081c5 !important;
+}
