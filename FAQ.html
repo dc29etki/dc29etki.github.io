@@ -54,92 +54,212 @@
                     <div><i class="fa fa-question-circle"></i> FAQ</div>
                 </div>
                 <div class="card-body px-5 pt-4">
-                    <div><strong>What happens when someone purchases an Effective Coverage Policy?</strong></div>
-                    <div>
-                        <ul>
-                            <li>When a resident purchases a policy from Effective Coverage there is no action you or your residents need to take. All policy information is automatically tracked and stored in Louie, the Effective Coverage platform. Residents
-                                that purchase Effective Coverage policies do not need to submit it to be approved, or have the additional interest added.</li>
-                        </ul>
+
+                    <div id="accordion" class="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What happens when someone purchases an Effective Coverage Policy?
+                            </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    When a resident purchases a policy from Effective Coverage there is no action you or your residents need to take. All policy information is automatically tracked and stored in Louie, the Effective Coverage platform. Residents that purchase Effective Coverage
+                                    policies do not need to submit it to be approved, or have the additional interest added.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Why did I get an email with a resident’s Effective Coverage policy information?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    When any of your residents purchase a policy from Effective coverage an email will be sent notifying you that a resident has purchased insurance through us. The email will include basic policy details, but there is no action you need to take.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How can I see if a resident has insurance?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    This information is available on the Effective Coverage dashboard under the ‘All Records’ tab. Once there you can search for a specific resident.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What if I don’t see a resident?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    If they have just moved in, the resident data has not yet synced. They will appear automatically within 24-48 hours. Please note that there is never a need to manually add a new resident file on the Effective Coverage dashboard. If they have been living
+                                    there for some time and you still don't see them please submit for review via the ‘Submit a Request’ box.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Why is a resident on my no insurance list they have a policy through Effective Coverage?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Sometimes residents will call in to get insurance before we have their resident information uploaded into our system. When that happens our agents will create an account for the resident. Usually, that account matches with the one created by your property
+                                    management software. Rarely, a second account may result. Some examples of why that happens are: The names don’t match up exactly. The wife called to purchase the policy so it’s under her name, but the husband is your
+                                    primary on the lease. Notify us of this discrepancy via the ‘Submit a Request’ box and we will promptly fix it.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        What if I see a resident that has moved out still on the dashboard?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    The resident will fall off upon the next migration of resident data. You will never need to delete an account.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Why is a resident’s policy no longer active?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                <div class="card-body">
+                                    There are several possible reasons. In some cases, the term of their coverage has expired. We may also have received a cancellation notice from their insurance carrier. Please note, we process ALL cancellation notices. That includes notices of pending
+                                    cancellation due to nonpayment (they didn't pay their bill and their policy is set to cancel if they don’t pay). These warnings sent by carriers are generally the only notification of cancellation which is sent.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        How can my resident add roommates?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                <div class="card-body">
+                                    If they would like to add roommates to an Effective Coverage policy they must call us to make that change.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        What if my residents were previously required to have more than $100,000 in personal liability insurance?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                                <div class="card-body">
+                                    Now, the minimum across the entire portfolio will be $100,000. If a resident has more there is no need for them to lower it.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        How can I get in contact with the help desk at Effective Coverage?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                                <div class="card-body">
+                                    Extension 3, but we do encourage you to take advantage of the 'Submit a Request' box on your dashboard for inquiries on specific residents.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Do I have to store a hard copy of the resident’ renters insurance in their file for auditing purposes?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                                <div class="card-body">
+                                    No, all files will be stored in the Effective Coverage platform.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading12">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                        What if someone submits their proof early?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                                <div class="card-body">
+                                    Submitting proof before it is required is more than welcome. They can submit their proof via effectivecoverage.com/proof, or by bringing a copy to the leasing office.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading13">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                        What do I do if a resident does not have insurance?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                                <div class="card-body">
+                                    If a resident does not have insurance you can send them an email by clicking on the email button next to their resident file. You can also print out and distribute the community insurance letter to residents that are not compliant. If you would like help
+                                    improving compliance, please reach out to Effective Coverage for support. We're happy to help you form a strategy for your specific portfolio's needs
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div><strong>Why did I get an email with a resident&rsquo;s Effective Coverage policy information?</strong></div>
-                    <div>
-                        <ul>
-                            <li>When any of your residents purchase a policy from Effective coverage an email will be sent notifying you that a resident has purchased insurance through us. The email will include basic policy details, but there is no action
-                                you need to take.</li>
-                        </ul>
-                    </div>
-                    <div><strong>How can I see if a resident has insurance?</strong></div>
-                    <div>
-                        <ul>
-                            <li>This information is available on the Effective Coverage dashboard under the &lsquo;All Records&rsquo; tab. Once there you can search for a specific resident.</li>
-                        </ul>
-                    </div>
-                    <div><strong>What if I don&rsquo;t see a resident?</strong></div>
-                    <div>
-                        <ul>
-                            <li>If they have just moved in, the resident data has not yet synced. They will appear automatically within 24-48 hours. Please note that there is never a need to manually add a new resident file on the Effective Coverage dashboard.
-                                If they have been living there for some time and you still don't see them please submit for review via the &lsquo;Submit a Request&rsquo; box.</li>
-                        </ul>
-                    </div>
-                    <div><strong>Why is a resident on my no insurance list they have a policy through Effective Coverage?</strong></div>
-                    <div>
-                        <ul>
-                            <li>Sometimes residents will call in to get insurance before we have their resident information uploaded into our system. When that happens our agents will create an account for the resident. Usually, that account matches with
-                                the one created by your property management software. Rarely, a second account may result. Some examples of why that happens are: The names don&rsquo;t match up exactly. The wife called to purchase the policy so it&rsquo;s
-                                under her name, but the husband is your primary on the lease. Notify us of this discrepancy via the &lsquo;Submit a Request&rsquo; box and we will promptly fix it.</li>
-                        </ul>
-                    </div>
-                    <div><strong>What if I see a resident that has moved out still on the dashboard?</strong></div>
-                    <div>
-                        <ul>
-                            <li>The resident will fall off upon the next migration of resident data. You will never need to delete an account.</li>
-                        </ul>
-                    </div>
-                    <div><strong>Why is a resident&rsquo;s policy no longer active?</strong></div>
-                    <div>
-                        <ul>
-                            <li>There are several possible reasons. In some cases, the term of their coverage has expired. We may also have received a cancellation notice from their insurance carrier. Please note, we process ALL cancellation notices. That
-                                includes notices of pending cancellation due to nonpayment (they didn't pay their bill and their policy is set to cancel if they don&rsquo;t pay). These warnings sent by carriers are generally the only notification of cancellation
-                                which is sent.</li>
-                        </ul>
-                    </div>
-                    <div><strong>How can my resident add roommates?</strong></div>
-                    <div>
-                        <ul>
-                            <li>If they would like to add roommates to an Effective Coverage policy they must call us to make that change.</li>
-                        </ul>
-                    </div>
-                    <div><strong>What if my residents were previously required to have more than $100,000 in personal liability insurance?</strong></div>
-                    <div>
-                        <ul>
-                            <li>Now, the minimum across the entire portfolio will be $100,000. If a resident has more there is no need for them to lower it.</li>
-                        </ul>
-                    </div>
-                    <div><strong>How can I get in contact with the help desk at Effective Coverage?</strong></div>
-                    <div>
-                        <ul>
-                            <li>Extension 3, but we do encourage you to take advantage of the 'Submit a Request' box on your dashboard for inquiries on specific residents.</li>
-                        </ul>
-                    </div>
-                    <div><strong>Do I have to store a hard copy of the resident&rsquo; renters insurance in their file for auditing purposes?</strong></div>
-                    <div>
-                        <ul>
-                            <li>No, all files will be stored in the Effective Coverage platform.</li>
-                        </ul>
-                    </div>
-                    <div><strong>What if someone submits their proof early?</strong></div>
-                    <div>
-                        <ul>
-                            <li>Submitting proof before it is required is more than welcome. They can submit their proof via effectivecoverage.com/proof, or by bringing a copy to the leasing office.</li>
-                        </ul>
-                    </div>
-                    <div><strong>What do I do if a resident does not have insurance?</strong></div>
-                    <div>
-                        <ul>
-                            <li>If a resident does not have insurance you can send them an email by clicking on the email button next to their resident file. You can also print out and distribute the community insurance letter to residents that are not compliant.
-                                If you would like help improving compliance, please reach out to Effective Coverage for support. We're happy to help you form a strategy for your specific portfolio's needs</li>
-                        </ul>
-                    </div>
+
                 </div>
                 <div class="card-footer small text-muted">&nbsp;</div>
             </div>

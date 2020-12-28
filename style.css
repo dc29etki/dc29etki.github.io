@@ -655,3 +655,20 @@ a.nav-link {
     background: #0696e4 !important;
     border: 1px solid transparent;
 }
+
+.panel-title a {
+    color: black !important;
+}
+
+.panel {
+    background: #00000008;
+    margin-bottom: 4px;
+}
+
+h6.panel-title {
+    margin-bottom: 0;
+}
+
+.accordion>.card .card-header {
+    padding: 4px !important;
+}
