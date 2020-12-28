@@ -220,7 +220,7 @@
                                                     <div class="container-fluid">
                                                         <ol class="breadcrumb">
                                                             <li class="breadcrumb-item">
-                                                                <a href="index.html">Dashboard</a>
+                                                                <a href="index.html">[Community Name]</a>
                                                             </li>
                                                             <li class="breadcrumb-item active">All Residents</li>
                                                         </ol>

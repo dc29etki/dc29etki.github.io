@@ -587,6 +587,12 @@ footer.sticky-footer {
     }
 }
 
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 .dropdown-message,
 a.dropdown-item {
     color: #3f3f3f !important;
