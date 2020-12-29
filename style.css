@@ -235,11 +235,9 @@ body.fixed-nav {
     .navbar-sidenav .nav-item:hover {
         background: #b3b3b3;
         border-radius: 6px;
-        /* margin: 8px 0; */
     }
-    .navbar-sidenav .nav-item:hover a {
-        /* transform: scale(1.075); */
-    }
+    .navbar-sidenav .nav-item:hover .nav-link-text {}
+    .navbar-sidenav .nav-item:hover i {}
     #mainNav .navbar-brand {}
     #mainNav .navbar-collapse {
         overflow: visible;
