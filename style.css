@@ -684,10 +684,6 @@ h6.panel-title {
     margin-bottom: 0;
 }
 
-.accordion>.card .card-header {
-    padding: 4px !important;
-}
-
 .bc-white.breadcrumb *,
 .bc-white .breadcrumb-item::before {
     color: white !important;
@@ -739,4 +735,33 @@ h6.panel-title {
 .breadcrumb-item a {
     color: var(--color-primary) !important;
     font-weight: bold;
+}
+
+.accordion .btn-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.accordion .btn-link:hover {
+    text-decoration: none;
+}
+
+.accordion .btn-link:focus {
+    text-decoration: none !important;
+}
+
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.accordion>.card .card-header {
+    padding: 0;
+}
+
+.accordion>.card .card-header button {
+    padding: 9px 15px;
 }

@@ -16,6 +16,9 @@
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <script>
         $(function() {
             $('#units_no').DataTable({
@@ -31,6 +34,18 @@
     </script>
     <script src="html_include.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+            $(".collapse.show").each(function() {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+            $(".card-header").click(function() {
+                $(".card-header").not(this).find(".fa").removeClass("fa-minus").addClass("fa-plus");
+                $(this).find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            });
+        });
+    </script>
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -38,6 +53,7 @@
     <script>
         includeHTML();
     </script>
+
 
     <div class="content-wrapper">
         <div class="container-fluid">
@@ -57,9 +73,10 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What happens when someone purchases an Effective Coverage Policy?
-                            </button>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span>What happens when someone purchases an Effective Coverage Policy?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
 
@@ -75,8 +92,9 @@
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Why did I get an email with a resident’s Effective Coverage policy information?
-                            </button>
+                                        <span>Why did I get an email with a resident’s Effective Coverage policy information?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse faq-head" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -90,8 +108,9 @@
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        How can I see if a resident has insurance?
-                            </button>
+                                        <span>How can I see if a resident has insurance?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse faq-head" aria-labelledby="headingThree" data-parent="#accordion">
@@ -105,8 +124,9 @@
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        What if I don’t see a resident?
-                            </button>
+                                        <span>What if I don’t see a resident?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseFour" class="collapse faq-head" aria-labelledby="headingFour" data-parent="#accordion">
@@ -121,8 +141,9 @@
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Why is a resident on my no insurance list they have a policy through Effective Coverage?
-                            </button>
+                                        <span>Why is a resident on my no insurance list they have a policy through Effective Coverage?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseFive" class="collapse faq-head" aria-labelledby="headingFive" data-parent="#accordion">
@@ -138,8 +159,9 @@
                             <div class="card-header" id="headingSix">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        What if I see a resident that has moved out still on the dashboard?
-                            </button>
+                                        <span>What if I see a resident that has moved out still on the dashboard?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseSix" class="collapse faq-head" aria-labelledby="headingSix" data-parent="#accordion">
@@ -153,8 +175,9 @@
                             <div class="card-header" id="headingSeven">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Why is a resident’s policy no longer active?
-                            </button>
+                                        <span>Why is a resident’s policy no longer active?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseSeven" class="collapse faq-head" aria-labelledby="headingSeven" data-parent="#accordion">
@@ -169,8 +192,9 @@
                             <div class="card-header" id="headingEight">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                        How can my resident add roommates?
-                            </button>
+                                        <span>How can my resident add roommates?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseEight" class="collapse faq-head" aria-labelledby="headingEight" data-parent="#accordion">
@@ -184,8 +208,9 @@
                             <div class="card-header" id="headingNine">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                        What if my residents were previously required to have more than $100,000 in personal liability insurance?
-                            </button>
+                                        <span>What if my residents were previously required to have more than $100,000 in personal liability insurance?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseNine" class="collapse faq-head" aria-labelledby="headingNine" data-parent="#accordion">
@@ -199,8 +224,9 @@
                             <div class="card-header" id="headingTen">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                        How can I get in contact with the help desk at Effective Coverage?
-                            </button>
+                                        <span>How can I get in contact with the help desk at Effective Coverage?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseTen" class="collapse faq-head" aria-labelledby="headingTen" data-parent="#accordion">
@@ -214,8 +240,9 @@
                             <div class="card-header" id="heading11">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                        Do I have to store a hard copy of the resident’ renters insurance in their file for auditing purposes?
-                            </button>
+                                        <span>Do I have to store a hard copy of the resident’ renters insurance in their file for auditing purposes?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapse11" class="collapse faq-head" aria-labelledby="heading11" data-parent="#accordion">
@@ -229,8 +256,9 @@
                             <div class="card-header" id="heading12">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                        What if someone submits their proof early?
-                            </button>
+                                       <span> What if someone submits their proof early?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapse12" class="collapse faq-head" aria-labelledby="heading12" data-parent="#accordion">
@@ -244,8 +272,9 @@
                             <div class="card-header" id="heading13">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                        What do I do if a resident does not have insurance?
-                            </button>
+                                        <span>What do I do if a resident does not have insurance?</span>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapse13" class="collapse faq-head" aria-labelledby="heading13" data-parent="#accordion">
