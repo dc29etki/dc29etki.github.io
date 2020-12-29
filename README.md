@@ -2,7 +2,6 @@
 New Front-end Code
 
 ## Project setup
----
 ### Requirements
 - Node.js
 - NPM
