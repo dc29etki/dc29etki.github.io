@@ -693,3 +693,12 @@ h6.panel-title {
     display: flex;
     align-items: center;
 }
+
+.link-plain {
+    color: black;
+}
+
+.link-plain:hover {
+    text-decoration: none;
+    color: #0081c5;
+}
