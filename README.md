@@ -1,5 +1,4 @@
 # LeaseTrack Community Dashboard
-## Front-end Code
 
 ## Project setup
 
