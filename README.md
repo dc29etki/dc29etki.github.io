@@ -7,6 +7,13 @@ New Front-end Code
 - Node.js
 - NPM
 
+#### Node
+- ##### Node installation on Windows
+
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer. >
+  Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+
+---
 ### Install
 
 ```
@@ -19,12 +26,12 @@ $ cd dc29etki.github.io
 npm install
 ```
 
-### Compiles and serves on Windows
+### Compiles and serves for dev on Windows
 ```
 npm run start
 ```
 
-### Compiles and serves on Unix systems
+### Compiles and serves for dev on Unix systems
 ```
 npm run start-unix
 ```
