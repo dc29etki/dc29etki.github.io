@@ -677,3 +677,14 @@ h6.panel-title {
 .bc-white .breadcrumb-item::before {
     color: white !important;
 }
+
+.table-card-header {
+    border: 1px solid transparent;
+    font-weight: 600;
+    color: white;
+}
+
+.table-card-header i {
+    font-size: 24px;
+    padding-right: 4px;
+}
