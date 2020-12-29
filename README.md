@@ -1,6 +1,13 @@
-# dc29etki.github.io
+# LeaseTrack Community Dashboard
+## Front-end Code
 
 ## Project setup
+
+### Requirements
+- Node.js
+- NPM
+
+### Build Node modules
 ```
 npm install
 ```
