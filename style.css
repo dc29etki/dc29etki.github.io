@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #0081c5;
+    --color-success: #3ddd97;
+    --color-danger: #E9573F;
+    --color-warning: #FF9B21;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -31,7 +38,7 @@ body {
 }
 
 .stat1 {
-    background: #0081c5;
+    background: var(--color-primary);
     border-radius: 5px;
     color: white;
     font-size: 14px;
@@ -39,7 +46,7 @@ body {
 
 .bg-primary,
 .btn-primary {
-    background: #0081c5 !important;
+    background: var(--color-primary) !important;
 }
 
 .navbar-toggler span {
@@ -612,23 +619,31 @@ a.nav-link {
     text-decoration: none;
     opacity: 0.7;
     /* -webkit-filter: brightness(80%);
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    transition: all .2s ease; */
+-webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-o-transition: all .2s ease;
+-ms-transition: all .2s ease;
+transition: all .2s ease; */
+}
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item>.nav-link {
+    width: 100%;
+}
+
+.btn-link {
+    color: #0081c5 !important;
 }
 
 .bg-danger {
-    background: #E9573F !important;
+    background: var(--color-danger) !important;
 }
 
 .bg-success {
-    background: #3ddd97 !important;
+    background: var(--color-success) !important;
 }
 
 .bg-warning {
-    background: #FF9B21 !important;
+    background: var(--color-warning) !important;
 }
 
 .opacity-75 {
@@ -636,19 +651,19 @@ a.nav-link {
 }
 
 .border-warning {
-    border: 5px solid #FF9B21 !important;
+    border: 5px solid var(--color-warning) !important;
 }
 
 .border-danger {
-    border: 5px solid #E9573F !important;
+    border: 5px solid var(--color-danger) !important;
 }
 
 .border-success {
-    border: 5px solid #3ddd97 !important;
+    border: 5px solid var(--color-success) !important;
 }
 
 .border-primary {
-    border: 5px solid #0081c5 !important;
+    border: 5px solid var(--color-primary) !important;
 }
 
 .btn-primary:hover {
@@ -700,5 +715,28 @@ h6.panel-title {
 
 .link-plain:hover {
     text-decoration: none;
-    color: #0081c5;
+    color: var(--color-primary);
+}
+
+.btn-effect {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #858585;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.btn-effect:hover {
+    background-color: darken(var(--color-primary), 5%);
+    border: 5px solid lighten(var(--color-primary), 5%);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.breadcrumb-item a {
+    color: var(--color-primary) !important;
+    font-weight: bold;
 }
