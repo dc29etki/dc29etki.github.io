@@ -217,6 +217,9 @@ body.fixed-nav {
         flex-direction: row;
         align-items: center;
     }
+    .mob-hide {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
