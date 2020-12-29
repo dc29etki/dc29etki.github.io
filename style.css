@@ -764,6 +764,19 @@ h6.panel-title {
     padding: 0;
 }
 
+.accordion>.card .card-header:hover * {
+    color: #009aec;
+}
+
 .accordion>.card .card-header button {
     padding: 9px 15px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: #009aec !important;
+}
+
+.btn-primary:hover {
+    background: #009aec;
 }
